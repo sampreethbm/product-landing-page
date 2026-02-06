@@ -1,129 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>SmartFit | AI Fitness Band</title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <title>SmartFit - AI Powered Fitness Band</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header>
-
-        <h1>SmartFit</h1>
-
-        <nav>
-            <a href="#features">Features</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
+    <header id="header">
+        <div class="container nav-container">
+            <h1 class="logo">SmartFit</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-
-    <!-- HERO -->
-    <section class="hero">
-
-        <h2>AI-Powered Fitness Band</h2>
-
-        <p>
-            Track your health, sleep, and workouts with intelligent analytics.
-        </p>
-
-        <button id="buyBtn">Buy Now</button>
-
-    </section>
-
-
-    <!-- FEATURES -->
-    <section id="features" class="card">
-
-        <h2>Features</h2>
-
-        <div class="grid">
-
-            <div class="feature">
-                <h3>Heart Rate</h3>
-                <p>Real-time heart monitoring.</p>
-            </div>
-
-            <div class="feature">
-                <h3>AI Coach</h3>
-                <p>Personalized workout plans.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Sleep Tracker</h3>
-                <p>Analyze sleep quality.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Waterproof</h3>
-                <p>IP68 certified design.</p>
-            </div>
-
+    <section id="hero">
+        <div class="hero-content reveal">
+            <h2>The Future of Fitness is Here</h2>
+            <p>Experience the next generation of health tracking with SmartFit. Powered by advanced AI analytics to optimize your performance.</p>
+            <button class="btn btn-primary cta-btn">Buy Now</button>
         </div>
-
     </section>
 
-
-    <!-- PRICING -->
-    <section id="pricing" class="card">
-
-        <h2>Pricing</h2>
-
-        <div class="pricing-box">
-
-            <h3>₹4,999</h3>
-
-            <p>One-time purchase</p>
-
-            <button class="buy">Order Now</button>
-
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title reveal">Why Choose SmartFit?</h2>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <h3>❤️ Heart Rate</h3>
+                    <p>Real-time ECG-grade heart rate monitoring 24/7.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>🤖 AI Coach</h3>
+                    <p>Personalized workout suggestions based on your recovery.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>🌙 Sleep Tracking</h3>
+                    <p>Analyze your REM cycles and wake up refreshed.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>💧 Waterproof</h3>
+                    <p>Swim-proof design tailored for triathletes.</p>
+                </div>
+            </div>
         </div>
-
     </section>
 
-
-    <!-- CONTACT -->
-    <section id="contact" class="card">
-
-        <h2>Contact Us</h2>
-
-        <form id="contactForm">
-
-            <input type="text" id="name" placeholder="Your Name">
-
-            <input type="email" id="email" placeholder="Your Email">
-
-            <textarea id="message" placeholder="Message"></textarea>
-
-            <button type="submit">Send</button>
-
-            <p id="msg"></p>
-
-        </form>
-
+    <section id="pricing">
+        <div class="container">
+            <h2 class="section-title reveal">Get Yours Today</h2>
+            <div class="pricing-card reveal">
+                <h3>SmartFit Pro</h3>
+                <p class="price">$149</p>
+                <ul class="price-features">
+                    <li>All AI Features</li>
+                    <li>2-Year Warranty</li>
+                    <li>Free Shipping</li>
+                </ul>
+                <button class="btn btn-secondary cta-btn">Order Now</button>
+            </div>
+        </div>
     </section>
 
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Contact Us</h2>
+            <form id="contact-form" class="reveal">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="How can we help?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <p id="form-message"></p>
+            </form>
+        </div>
+    </section>
 
-    <!-- FOOTER -->
     <footer>
-
-        <p>© 2026 SmartFit | All Rights Reserved</p>
-
+        <p>&copy; 2024 SmartFit. All rights reserved.</p>
     </footer>
 
-
     <script src="script.js"></script>
-
 </body>
-
 </html>
