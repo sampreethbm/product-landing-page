@@ -3,9 +3,7 @@
 A modern, responsive product landing page for "SmartFit," a conceptual AI-powered fitness band. This project demonstrates semantic HTML, responsive CSS (Flexbox/Grid), and interactive JavaScript functionality, including a dark mode toggle and form validation.
 
 ## Live Demo
-
-[Link to your live demo here]
-*(After deploying to GitHub Pages, replace the line above with your actual URL, e.g., https://yourusername.github.io/product-landing/)*
+https://sampreethbm.github.io/product-landing-page/
 
 ##  Features
 
